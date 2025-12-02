@@ -10,7 +10,7 @@ import chamadosRoutes from "./routes/chamados.routes.js";
 import usuariosRoutes from "./routes/usuarios.routes.js";
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'http://localhost:5173' }));
 app.use(express.json());
 
 app.use("/auth", authRoutes);
