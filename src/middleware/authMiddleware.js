@@ -13,7 +13,6 @@ const authMiddleware = (req, res, next) => {
 
   try {
     const payload = jwt.verify(token, segredoJwt);
-    console.log("PAYLOAD RECEBIDO DO TOKEN:", payload);
     req.usuario = payload;
     next();
   } catch (error) {
