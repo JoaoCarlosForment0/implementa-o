@@ -11,7 +11,7 @@ import usuariosRoutes from "./routes/usuarios.routes.js";
 import homeRoutes from "./routes/home.routes.js";
 
 const app = express();
-app.use(cors({ origin: 'http://localhost:5173' }));
+app.use(cors({ origin: 'https://help-desk-front-blush.vercel.app' }));
 app.use(express.json());
 
 app.use("/auth", authRoutes);
